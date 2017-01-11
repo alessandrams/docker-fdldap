@@ -1,30 +1,3 @@
-
-Skip to content
-This repository
-
-    Pull requests
-    Issues
-    Gist
-
-    @alessandrams
-
-1
-0
-
-    1
-
-hrektts/docker-fusiondirectory-openldap
-Code
-Issues 0
-Pull requests 0
-Projects 0
-Wiki
-Pulse
-Graphs
-docker-fusiondirectory-openldap/init.sh
-bc136ea on 5 Nov 2016
-@hrektts hrektts Fix syntax to correctly add the readonly user
-225 lines (195 sloc) 5.71 KB
 #!/bin/bash
 set -e
 
@@ -233,9 +206,3 @@ ldapadd -x -D "cn=admin,${SUFFIX}" -w ${LDAP_ADMIN_PASSWORD} -f /tmp/add.ldif
 
 rm -rf /tmp/*
 touch ${BOOTSTRAPPED}
-
-    Contact GitHub API Training Shop Blog About 
-
-    © 2017 GitHub, Inc. Terms Privacy Security Status Help 
-
-
